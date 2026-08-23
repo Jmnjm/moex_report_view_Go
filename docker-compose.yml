@@ -1,0 +1,39 @@
+# docker-compose описывает НЕСКОЛЬКО контейнеров и как они связаны.
+# У нас два "сервиса": сама база данных (db) и наше приложение (web).
+# Command "docker compose up" поднимет их оба разом, в одной сети,
+# так что они смогут видеть друг друга по именам сервисов.
+
+services:
+  db:
+    image: postgres:16          # готовый образ Postgres, ничего своего писать не надо
+    environment:
+      POSTGRES_USER: moex_user
+      POSTGRES_PASSWORD: moex_pass
+      POSTGRES_DB: moex_reports
+    volumes:
+      - pgdata:/var/lib/postgresql/data   # чтобы данные не пропадали при перезапуске контейнера
+    ports:
+      - "5432:5432"              # пробрасываем порт наружу, полезно для отладки
+    healthcheck:
+      # Проверка "жив ли Postgres" изнутри контейнера. pg_isready —
+      # штатная утилита Postgres, которая просто говорит да/нет.
+      test: ["CMD-SHELL", "pg_isready -U moex_user -d moex_reports"]
+      interval: 2s      # проверять каждые 2 секунды
+      timeout: 3s
+      retries: 10       # максимум 10 попыток, прежде чем сдаться
+
+  web:
+    build: .                     # собрать образ из нашего Dockerfile (папка рядом)
+    depends_on:
+      db:
+        condition: service_healthy   # не просто "после запуска db", а "после того как db реально готова"
+    environment:
+      DATABASE_URL: postgresql://moex_user:moex_pass@db:5432/moex_reports
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./reports:/app/reports   # чтобы менять файлы отчётов без пересборки образа
+      - ./styles:/app/styles
+
+volumes:
+  pgdata:
