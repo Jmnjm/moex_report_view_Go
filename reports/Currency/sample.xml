@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/xsl" href="C:\MICEX\XSLT\CUX07_14102013.xslt"?>
+<?xml-stylesheet type="text/xsl" href="https://ftp.moex.com/pub/Reports/Currency/XSLT/CUX07_14102013.xslt"?>
+<MICEX_DOC xsi:noNamespaceSchemaLocation="C:\MICEX\XSD\CUX07_18032013.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DOC_REQUISITES DOC_DATE="2012-03-15" DOC_TIME="19:07:24" DOC_NO="001111111/CU" DOC_TYPE_ID="CUX07" SENDER_ID="MM0000100000" RECEIVER_ID="EB9999100000"/>
+	<CUX07 ReportDate="2012-03-15" FirmId="EB9999100000" FirmName="&quot;Тест Банк-2&quot; (ОАО)" ExchangeId="EICX" ExchangeName="ММВБ-Урал">
+		<SETTLE ExtSettleCode="88887">
+			<SESSION AddSession="N" SessionName="Основная сессия">
+				<CURRPAIR CurrencyId="USD" CurrencyName="Доллар США" CoCurrencyId="RUB" CoCurrencyName="Российский рубль">
+					<SECURITY SecurityId="USD000000TOD" SecShortName="USDRUB_TOD" FaceValue="1">
+						<SETTLEDATE SettleDate="2012-03-15">
+							<GROUP TradeGroup="S">
+								<MAINSEC MainSecurityId="USD000TODTOM" MainSecShortName="USD_TODTOM">
+									<RECORDS OrderNo="3220022002" AcceptNo="99199233B" TradeTime="10:29:13" BuySell="B" BasePrice="29.01" Decimals="4" Price="29.4731" Quantity="5600000" Value="165049360" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199244B" TradeTime="10:33:12" BuySell="B" BasePrice="29.01" Decimals="4" Price="29.4731" Quantity="50000000" Value="1473655000" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199248B" TradeTime="10:40:10" BuySell="B" BasePrice="29.01" Decimals="4" Price="29.4731" Quantity="5000000" Value="147365500" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199259B" TradeTime="10:42:05" BuySell="B" BasePrice="29.01" Decimals="4" Price="29.4731" Quantity="2200000" Value="64840820" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199273B" TradeTime="10:47:29" BuySell="B" BasePrice="29.01" Decimals="4" Price="29.4731" Quantity="25300000" Value="745669430" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+								</MAINSEC>
+							</GROUP>
+						</SETTLEDATE>
+					</SECURITY>
+					<SECURITY SecurityId="USD000UTSTOM" SecShortName="USDRUB_TOM" FaceValue="1">
+						<SETTLEDATE SettleDate="2012-03-16">
+							<GROUP TradeGroup="T">
+								<MAINSEC MainSecurityId="" MainSecShortName="">
+									<RECORDS OrderNo="1552788814" AcceptNo="99199296B" TradeTime="11:13:38" BuySell="B" Decimals="4" Price="29.5549" Quantity="130000" Value="3842137" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="1559343262" AcceptNo="99199302B" TradeTime="14:45:58" BuySell="B" Decimals="4" Price="29.4988" Quantity="50000" Value="1474940" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="1559798831" AcceptNo="99199313B" TradeTime="15:01:39" BuySell="B" Decimals="4" Price="29.4774" Quantity="20000" Value="589548" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="1559802538" AcceptNo="99199322B" TradeTime="15:01:57" BuySell="B" Decimals="4" Price="29.473" Quantity="10000" Value="294730" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+								</MAINSEC>
+							</GROUP>
+							<GROUP TradeGroup="S">
+								<MAINSEC MainSecurityId="USD000TODTOM" MainSecShortName="USD_TODTOM">
+									<RECORDS OrderNo="3220022002" AcceptNo="99199335S" TradeTime="10:29:13" BuySell="S" BasePrice="29.3434" Decimals="4" Price="29.4772" Quantity="5600000" Value="165072320" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199341S" TradeTime="10:33:12" BuySell="S" BasePrice="29.3434" Decimals="4" Price="29.4772" Quantity="50000000" Value="1473860000" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199352S" TradeTime="10:40:10" BuySell="S" BasePrice="29.3434" Decimals="4" Price="29.4772" Quantity="5000000" Value="147386000" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199358S" TradeTime="10:42:05" BuySell="S" BasePrice="29.3434" Decimals="4" Price="29.4772" Quantity="2200000" Value="64849840" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3220022002" AcceptNo="99199362S" TradeTime="10:47:29" BuySell="S" BasePrice="29.3434" Decimals="4" Price="29.4772" Quantity="25300000" Value="745773160" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+								</MAINSEC>
+							</GROUP>
+						</SETTLEDATE>
+					</SECURITY>
+				</CURRPAIR>
+				<CURRPAIR CurrencyId="EUR" CurrencyName="Евро" CoCurrencyId="RUB" CoCurrencyName="Российский рубль">
+					<SECURITY SecurityId="EUR_RUB__TOD" SecShortName="EURRUB_TOD" FaceValue="1">
+						<SETTLEDATE SettleDate="2012-03-15">
+							<GROUP TradeGroup="S">
+								<MAINSEC MainSecurityId="EUR000TODTOM" MainSecShortName="EUR_TODTOM">
+									<RECORDS OrderNo="3550703689" AcceptNo="99199413B" TradeTime="10:09:04" BuySell="B" BasePrice="38.2323" Decimals="4" Price="38.4798" Quantity="12700000" Value="488693460" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3550703689" AcceptNo="99199425B" TradeTime="10:09:04" BuySell="B" BasePrice="38.2323" Decimals="4" Price="38.4798" Quantity="1000000" Value="38479800" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3550703689" AcceptNo="99199448B" TradeTime="10:15:56" BuySell="B" BasePrice="38.2323" Decimals="4" Price="38.4798" Quantity="4800000" Value="184703040" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+								</MAINSEC>
+							</GROUP>
+						</SETTLEDATE>
+					</SECURITY>
+					<SECURITY SecurityId="EUR_RUB__TOM" SecShortName="EURRUB_TOM" FaceValue="1">
+						<SETTLEDATE SettleDate="2012-03-16">
+							<GROUP TradeGroup="T">
+								<MAINSEC MainSecurityId="" MainSecShortName="">
+									<RECORDS OrderNo="3550703884" AcceptNo="99199487B" TradeTime="10:07:39" BuySell="B" Decimals="4" Price="38.5846" Quantity="20000" Value="771692" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3550703912" AcceptNo="99199496B" TradeTime="11:13:46" BuySell="B" Decimals="4" Price="38.5838" Quantity="16000" Value="617340.8" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+								</MAINSEC>
+							</GROUP>
+							<GROUP TradeGroup="S">
+								<MAINSEC MainSecurityId="EUR000TODTOM" MainSecShortName="EUR_TODTOM">
+									<RECORDS OrderNo="3550703689" AcceptNo="99199502S" TradeTime="10:09:04" BuySell="S" BasePrice="38.2" Decimals="4" Price="38.485" Quantity="12700000" Value="488759500" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3550703689" AcceptNo="99199503S" TradeTime="10:09:04" BuySell="S" BasePrice="38.2" Decimals="4" Price="38.485" Quantity="1000000" Value="38485000" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+									<RECORDS OrderNo="3550703689" AcceptNo="99199577S" TradeTime="10:15:56" BuySell="S" BasePrice="38.2" Decimals="4" Price="38.485" Quantity="4800000" Value="184728000" UserId="ED0090030018" BoardId="CETS" BoardName="Торговая сессия ЕТС"/>
+								</MAINSEC>
+							</GROUP>
+						</SETTLEDATE>
+					</SECURITY>
+				</CURRPAIR>
+			</SESSION>
+		</SETTLE>
+	</CUX07>
+</MICEX_DOC>

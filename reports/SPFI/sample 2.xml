@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\MICEX\XSLT\spfi-xslt.xsl"?><moexSpfiReport xmlns="http://www.moex.com/spfi-1" xmlns:ms="http://www.moex.com/spfi-1" xmlns:fpml="http://www.fpml.org/FpML-5/confirmation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xsd/spfi-1-6.xsd" version="1.6" type="cr" xslt="1.4.9" server="otcdemo.moex.com">
+  <header>
+    <messageId>137765</messageId>
+    <sentBy>NCCB</sentBy>
+    <sendTo>MFXXXXX00000</sendTo>
+    <clearingDate>2024-02-06</clearingDate>
+    <creationTimestamp>2024-02-07T09:55:00</creationTimestamp>
+    <clearingSessionNo>3</clearingSessionNo>
+  </header>
+  <ms:fpml xmlns="http://www.fpml.org/FpML-5/confirmation">
+    <market>
+      <benchmarkQuotes>
+        <instrumentSet>
+          <rateIndex id="RUB-RUONIA-OIS-COMPOUND">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">Ruonia-ON</instrumentId>
+            <currency>RUB</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">RUB-RUONIA-OIS-COMPOUND</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>D</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="RUB-RUSFAR-OIS-COMPOUND">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">RUSFAR-ON</instrumentId>
+            <currency>RUB</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">RUB-RUSFAR-OIS-COMPOUND</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>D</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="RUB-CBR-KEY-RATE AVG 1D">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">RUB-CBR-KEY-RATE</instrumentId>
+            <currency>RUB</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">RUB-CBR-KEY-RATE AVG 1D</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>W</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="RUB-MOSPRIME-NFEA-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOSPRIME-6M</instrumentId>
+            <currency>RUB</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">RUB-MOSPRIME-NFEA</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="RUB-MOSPRIME-NFEA-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOSPRIME-3M</instrumentId>
+            <currency>RUB</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">RUB-MOSPRIME-NFEA</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="RUB-MOSPRIME-NFEA-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOSPRIME-1M</instrumentId>
+            <currency>RUB</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">RUB-MOSPRIME-NFEA</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CHF-LIBOR-ARR-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CHF-LIBOR-ARR-6M</instrumentId>
+            <currency>CHF</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CHF-LIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CHF-LIBOR-ARR-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CHF-LIBOR-ARR-3M</instrumentId>
+            <currency>CHF</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CHF-LIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CHF-LIBOR-ARR-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CHF-LIBOR-ARR-1M</instrumentId>
+            <currency>CHF</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CHF-LIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CHF-LIBOR-BBA-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CHF-LIBOR-BBA-6M</instrumentId>
+            <currency>CHF</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CHF-LIBOR-BBA</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CHF-LIBOR-BBA-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CHF-LIBOR-BBA-3M</instrumentId>
+            <currency>CHF</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CHF-LIBOR-BBA</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CHF-LIBOR-BBA-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CHF-LIBOR-BBA-1M</instrumentId>
+            <currency>CHF</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CHF-LIBOR-BBA</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CNY-LIBOR-BBA-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CNY-LIBOR-BBA-6M</instrumentId>
+            <currency>CNY</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CNY-SHIBOR-Reuters</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CNY-LIBOR-BBA-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CNY-LIBOR-BBA-3M</instrumentId>
+            <currency>CNY</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CNY-SHIBOR-Reuters</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CNY-LIBOR-BBA-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CNY-LIBOR-BBA-1M</instrumentId>
+            <currency>CNY</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CNY-SHIBOR-Reuters</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="USD-LIBOR-BBA-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">LIBOR-6M</instrumentId>
+            <currency>USD</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">USD-LIBOR-BBA</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="USD-LIBOR-BBA-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">LIBOR-3M</instrumentId>
+            <currency>USD</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">USD-LIBOR-BBA</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="USD-LIBOR-BBA-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">LIBOR-1M</instrumentId>
+            <currency>USD</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">USD-LIBOR-BBA</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="USD-LIBOR-ARR-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">USD-LIBOR-ARR-6M</instrumentId>
+            <currency>USD</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">USD-LIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="USD-LIBOR-ARR-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">USD-LIBOR-ARR-3M</instrumentId>
+            <currency>USD</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">USD-LIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="USD-LIBOR-ARR-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">USD-LIBOR-ARR-1M</instrumentId>
+            <currency>USD</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">USD-LIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="EUR-EURIBOR-Act365-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">EUR-EURIBOR-Act365-6M</instrumentId>
+            <currency>EUR</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">EUR-EURIBOR-Act/365</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="EUR-EURIBOR-Act365-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">EUR-EURIBOR-Act365-3M</instrumentId>
+            <currency>EUR</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">EUR-EURIBOR-Act/365</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="EUR-EURIBOR-Act365-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">EUR-EURIBOR-Act365-1M</instrumentId>
+            <currency>EUR</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">EUR-EURIBOR-Act/365</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="EUR-EURIBOR-ARR-6M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">EUR-EURIBOR-ARR-6M</instrumentId>
+            <currency>EUR</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">EUR-EURIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>6</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="EUR-EURIBOR-ARR-3M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">EUR-EURIBOR-ARR-3M</instrumentId>
+            <currency>EUR</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">EUR-EURIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="EUR-EURIBOR-ARR-1M">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">EUR-EURIBOR-ARR-1M</instrumentId>
+            <currency>EUR</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">EUR-EURIBOR-ARR</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>M</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="USD-SOFR-OIS Compound">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">USD-SOFR-ON</instrumentId>
+            <currency>USD</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">USD-SOFR-OIS Compound</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>D</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="EUR-EuroSTR-OIS Compound">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">EUR-ESTR-ON</instrumentId>
+            <currency>EUR</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">EUR-EuroSTR-OIS Compound</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>D</period>
+            </term>
+          </rateIndex>
+          <rateIndex id="CHF-SARON-OIS Compound">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">CHF-SARON-ON</instrumentId>
+            <currency>CHF</currency>
+            <floatingRateIndex floatingRateIndexScheme="http://www.moex.com/spfi/coding-scheme/floating-rate-index-market">CHF-SARON-OIS Compound</floatingRateIndex>
+            <term>
+              <periodMultiplier>1</periodMultiplier>
+              <period>D</period>
+            </term>
+          </rateIndex>
+          <fx id="MOEXFIXUSDRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXFIXUSDRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>USD</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXFIXEURRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXFIXEURRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>EUR</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXFIXEURUSD">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXFIXEURUSD</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>EUR</currency1>
+              <currency2>USD</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXFIXCHFRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXFIXCHFRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>CHF</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXFIXCNYRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXFIXCNYRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>CNY</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXCENTRALUSDRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXCENTRALUSDRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>USD</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXCENTRALEURRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXCENTRALEURRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>EUR</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXCENTRALEURUSD">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXCENTRALEURUSD</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>EUR</currency1>
+              <currency2>USD</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXCENTRALKZTRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXCENTRALKZTRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>KZT</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXCENTRALCHFRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXCENTRALCHFRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>CHF</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+          <fx id="MOEXCENTRALCNYRUB">
+            <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">MOEXCENTRALCNYRUB</instrumentId>
+            <quotedCurrencyPair>
+              <currency1>CNY</currency1>
+              <currency2>RUB</currency2>
+              <quoteBasis>Currency2PerCurrency1</quoteBasis>
+            </quotedCurrencyPair>
+          </fx>
+        </instrumentSet>
+        <assetQuote>
+          <objectReference href="MOEXFIXUSDRUB"/>
+          <quote>
+            <value>90.5964</value>
+            <time>2024-02-02T12:30:00</time>
+          </quote>
+        </assetQuote>
+        <assetQuote>
+          <objectReference href="MOEXFIXEURRUB"/>
+          <quote>
+            <value>98.6025</value>
+            <time>2024-02-02T12:30:00</time>
+          </quote>
+        </assetQuote>
+        <assetQuote>
+          <objectReference href="MOEXFIXEURUSD"/>
+          <quote>
+            <value>1.08837</value>
+            <time>2024-02-02T12:30:00</time>
+          </quote>
+        </assetQuote>
+        <assetQuote>
+          <objectReference href="MOEXFIXCNYRUB"/>
+          <quote>
+            <value>12.5938</value>
+            <time>2024-02-02T12:30:00</time>
+          </quote>
+        </assetQuote>
+      </benchmarkQuotes>
+      <fxCurveValuation>
+        <objectReference href="USD-RUB-FXCurve"/>
+        <baseDate>2024-02-06</baseDate>
+        <spotDate>2024-02-06</spotDate>
+        <spotRate>
+          <instrumentSet>
+            <fx>
+              <instrumentId instrumentIdScheme="http://www.moex.com/spfi/coding-scheme/instrument-id">USD-RUB-FX</instrumentId>
+              <quotedCurrencyPair>
+                <currency1>USD</currency1>
+                <currency2>RUB</currency2>
+                <quoteBasis>Currency2PerCurrency1</quoteBasis>
+              </quotedCurrencyPair>
+            </fx>
+          </instrumentSet>
+          <assetQuote>
+            <quote>
+              <value>NaN</value>
+            </quote>
+          </assetQuote>
+        </spotRate>
+      </fxCurveValuation>
+    </market>
+    <party id="MFXXXXX00000">
+      <partyId>MFXXXXX00000</partyId>
+      <partyName>MFXXXXX00000</partyName>
+    </party>
+    <account id="MFXXXXX00000.MFXXXXX00000">
+      <accountId>MFXXXXX00000.MFXXXXX00000</accountId>
+      <accountName/>
+      <accountType>House</accountType>
+      <accountBeneficiary href="MFXXXXX00000"/>
+    </account>
+  </ms:fpml>
+  <initialMargin>
+    <settlementCode id="MFXXXXX00000.RK12345">
+      <settlementCodeId>12345</settlementCodeId>
+      <unifiedPoolStatus>true</unifiedPoolStatus>
+      <balance id="CNY">
+        <balanceStartDay>
+          <asset>CNY</asset>
+          <amount>-2000000000</amount>
+        </balanceStartDay>
+        <balanceBeforeClearing>
+          <asset>CNY</asset>
+          <amount>-2000000000</amount>
+        </balanceBeforeClearing>
+        <liability>
+          <liabilityAmount>
+            <asset>CNY</asset>
+            <amount>0</amount>
+          </liabilityAmount>
+        </liability>
+        <payments>
+          <asset>CNY</asset>
+          <amount>0</amount>
+        </payments>
+        <balanceAfterClearing>
+          <asset>CNY</asset>
+          <amount>-2000000000</amount>
+        </balanceAfterClearing>
+        <estimateAmount>
+          <currency>RUB</currency>
+          <amount>-18000000000</amount>
+        </estimateAmount>
+        <amountAvailable>
+          <currency>CNY</currency>
+          <amount>250000000.75</amount>
+        </amountAvailable>
+      </balance>
+      <balance id="RUB">
+        <balanceStartDay>
+          <asset>RUB</asset>
+          <amount>22000000000.95</amount>
+        </balanceStartDay>
+        <balanceBeforeClearing>
+          <asset>RUB</asset>
+          <amount>22000000000.95</amount>
+        </balanceBeforeClearing>
+        <liability>
+          <liabilityAmount>
+            <asset>RUB</asset>
+            <amount>0</amount>
+          </liabilityAmount>
+        </liability>
+        <payments>
+          <asset>RUB</asset>
+          <amount>0</amount>
+        </payments>
+        <balanceAfterClearing>
+          <asset>RUB</asset>
+          <amount>22000000000.95</amount>
+        </balanceAfterClearing>
+        <estimateAmount>
+          <currency>RUB</currency>
+          <amount>22000000000.95</amount>
+        </estimateAmount>
+        <amountAvailable>
+          <currency>RUB</currency>
+          <amount>3500000000.55</amount>
+        </amountAvailable>
+      </balance>
+      <balance id="USD">
+        <balanceStartDay>
+          <asset>USD</asset>
+          <amount>1000000.75</amount>
+        </balanceStartDay>
+        <balanceBeforeClearing>
+          <asset>USD</asset>
+          <amount>1000000.78</amount>
+        </balanceBeforeClearing>
+        <liability>
+          <liabilityAmount>
+            <asset>USD</asset>
+            <amount>0</amount>
+          </liabilityAmount>
+        </liability>
+        <payments>
+          <asset>USD</asset>
+          <amount>0</amount>
+        </payments>
+        <balanceAfterClearing>
+          <asset>USD</asset>
+          <amount>1000000.78</amount>
+        </balanceAfterClearing>
+        <estimateAmount>
+          <currency>RUB</currency>
+          <amount>10000000.257524</amount>
+        </estimateAmount>
+        <amountAvailable>
+          <currency>USD</currency>
+          <amount>35000000.58</amount>
+        </amountAvailable>
+      </balance>
+      <estimateAmountSumm>
+        <currency>RUB</currency>
+        <amount>2000000000.58</amount>
+      </estimateAmountSumm>
+      <estimateAmountBalance>
+        <currency>RUB</currency>
+        <amount>4000000000.2</amount>
+      </estimateAmountBalance>
+      <initialMarginMin>
+        <currency>RUB</currency>
+        <amount>1900000000.44</amount>
+      </initialMarginMin>
+      <estimateAmountAvailable>
+        <currency>RUB</currency>
+        <amount>35000000.22</amount>
+      </estimateAmountAvailable>
+    </settlementCode>
+  </initialMargin>
+</moexSpfiReport>
