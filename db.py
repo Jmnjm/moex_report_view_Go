@@ -1,18 +1,14 @@
 """
-Реестр отчётов в PostgreSQL.
+Реестр отчётов в PostgreSQL
 
-Логика та же, что была на SQLite: храним не содержимое отчётов,
-а метаданные (тип, путь к файлу, путь к стилю) — это и даёт
-навигацию по отчётам без парсинга каждого файла.
-
-Отличие от SQLite-версии: подключение идёт не к локальному файлу,
-а по адресу базы данных, который передаётся через переменную
-окружения DATABASE_URL. Так удобно, потому что этот адрес будет
-разным локально и в Docker — сам код менять не придётся.
+Хранятся метаданные (тип, путь к файлу, путь к стилю) 
+- даём навигацию по отчётам без парсинга каждого файла. 
+Подключение идёт по адресу базы данных, который передаёт через
+переменную окружения DATABASE_URL 
+- адрес можно менять для локальной работы и для Docker, не трогая сам код
 """
 
 import os
-
 import psycopg2
 import psycopg2.extras
 
@@ -20,12 +16,9 @@ DATABASE_URL = os.environ.get(
     "DATABASE_URL",
     "postgresql://moex_user:moex_pass@localhost:5432/moex_reports",
 )
-
-
 def get_connection():
     conn = psycopg2.connect(DATABASE_URL)
     return conn
-
 
 def init_db() -> None:
     """Создаёт таблицу реестра, если её ещё нет."""
@@ -46,7 +39,6 @@ def init_db() -> None:
     conn.commit()
     conn.close()
 
-
 def add_report(filename: str, report_type: str, file_path: str, xslt_path):
     conn = get_connection()
     with conn.cursor() as cur:
@@ -61,7 +53,6 @@ def add_report(filename: str, report_type: str, file_path: str, xslt_path):
     conn.commit()
     conn.close()
 
-
 def list_reports():
     conn = get_connection()
     with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
@@ -69,7 +60,6 @@ def list_reports():
         rows = cur.fetchall()
     conn.close()
     return rows
-
 
 def get_report(report_id: int):
     conn = get_connection()
