@@ -1,0 +1,8 @@
+# Скомпилированный бинарник - собирается из исходников, "в git не нужен"
+report-viewer
+moex-report-viewer
+moex-report-view_Go
+# На случай локальной сборки под Windows
+report-viewer.exe
+moex-report-viewer.exe
+moex-report-view_Go.exe

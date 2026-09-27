@@ -1,11 +1,21 @@
-FROM python:3.12-slim
+# Многоступенчатая сборка: на первом этапе компилируем Go-бинарник,
+# на втором - кладём его в лёгкий образ без всего инструментария
+# сборки. В Python-версии такого разделения не было - там весь
+# интерпретатор нужен и на этапе сборки, и на этапе запуска, а
+# скомпилированный Go-бинарник для работы интерпретатор уже не нужен.
 
+FROM golang:1.22 AS builder
 WORKDIR /app
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
+COPY go.mod go.sum* ./
+RUN go mod download
 COPY . .
+RUN CGO_ENABLED=0 GOOS=linux go build -o report-viewer .
 
-# сканируются отчёты и поднимается сервер
-CMD ["sh", "-c", "python scan_reports.py && uvicorn main:app --host 0.0.0.0 --port 8000"]
+# Второй этап: минимальный образ, только бинарник + xsltproc,
+# который нужен transform.go для трансформации на этапе выполнения
+FROM debian:bookworm-slim
+RUN apt-get update && apt-get install -y --no-install-recommends xsltproc ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY --from=builder /app/report-viewer .
+CMD ["./report-viewer"]
